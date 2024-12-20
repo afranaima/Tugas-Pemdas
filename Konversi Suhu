@@ -1,0 +1,15 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+
+int main() {
+	double c, k, f;
+	cout<<"Masukkan suhu dalam Celcius"<<endl;
+	cin>>c;
+	k=c+273.15;
+	f=(double) 9/5*c+32;
+	cout<<"Celcius dalam Kelvin = "<<k<< " derajat Kelvin" <<endl;
+	cout<<"Celcius dalam Fahrenheit = " <<f<< " derajat Fahrenheit" <<endl;
+	return 0;
+}
