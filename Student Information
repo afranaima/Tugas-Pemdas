@@ -1,0 +1,39 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+int main() {
+	string ID;
+	string Name;
+	string Dept;
+	
+	cout<<"Menghitung final score"<<endl;
+	
+	cout<<"Masukkan Student ID"<<endl;
+	getline(cin,ID);
+	
+	cout<<"Masukkan Student Name"<<endl;
+	getline(cin,Name);
+	
+	cout<<"Masukkan Dept. Name"<<endl;
+	getline(cin,Dept);
+	
+	double sc1,sc2,sc3,mean;
+	
+	cout<<"Masukkan Score 1"<<endl;
+	cin>>sc1;
+	
+	cout<<"Masukkan Score 2"<<endl;
+	cin>>sc2;
+	
+	cout<<"Masukkan Score 3"<<endl;
+	cin>>sc3;
+	mean=(sc1+sc2+sc3)/3;
+	
+	cout<<"Student Information"<<endl;
+	cout<<"Student ID : "<<ID<<endl;
+	cout<<"Student Name : "<<Name<<endl;
+	cout<<"Dept. Name : "<<Dept<<endl;
+	cout<<"Final Score : "<<mean<<endl;
+	return 0;
+}
