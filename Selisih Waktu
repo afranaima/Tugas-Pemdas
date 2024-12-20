@@ -1,0 +1,31 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+int main() {
+	int h1,m1,h2,m2,t1,t2,s,h3,m3;
+	
+	cout<<"Menghitung selisih jam dan menit" <<endl;
+	cout<<"Masukkan jam mulai"<<endl;
+	cin>>h1;
+	cout<<"Masukkan menit mulai "<<endl;
+	cin>>m1;
+	cout<<"Jam mulai "<<h1<<":"<<m1<<endl;
+	cout<< "Masukkan jam selesai"<<endl;
+	cin>>h2;
+	cout<<"Masukkan menit selesai"<<endl;
+	cin>>m2;
+	cout<<"Jam selesao "<<h2<<":"<<m2<<endl;
+	t1=h1*3600+m1*60;
+	t2=h2*3600+m2*60;
+	if (t1<t2) {
+		s=t2-t1;
+	}else{
+		cout<<"Operasi salah silahkan mulai ulang"<<endl;
+		main();
+	}
+	h3=(int)((double)s/3600);
+	m3=(int)((double) (s%3600)/60);
+	cout<<"Hasil selisih waktu "<<h3<<" Jam "<<m3<<" Menit"<<endl;
+	return 0;
+}
